@@ -1,0 +1,15 @@
+@scope (.names-age) {
+    :scope {
+        background: lightblue;
+        padding: 10px;
+    }
+
+    &:hover {
+        background: lightcoral;
+    }
+
+    > div:hover {
+        background: lightgreen;
+        cursor: pointer;
+    }
+}
