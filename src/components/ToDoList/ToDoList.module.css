@@ -1,0 +1,15 @@
+.toDoList {
+  background-color: aliceblue;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+}
+.task i {
+  color: rgb(68, 1, 1);
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+  margin: 00px;
+}
