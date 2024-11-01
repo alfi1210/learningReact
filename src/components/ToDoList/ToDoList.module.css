@@ -1,15 +1,46 @@
 .toDoList {
   background-color: aliceblue;
+  padding: 0;
+}
+button:hover {
+  cursor: pointer;
 }
 .task {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
 }
-.task i {
+.taskText {
+  flex: 1;
+  color: rgb(114, 112, 112);
+}
+.addButton {
+  color: green;
+  &:hover {
+    color: rgb(0, 190, 0);
+  }
+  margin: 0px;
+}
+.deleteButton {
   color: rgb(68, 1, 1);
   &:hover {
-    cursor: pointer;
-    color: red;
+    color: rgb(176, 1, 1);
   }
-  margin: 00px;
+  margin: 0px;
+}
+.moveButton {
+  color: rgb(111, 111, 253);
+  &:hover {
+    color: rgb(0, 0, 254);
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+li button {
+  margin-left: 1px;
 }
