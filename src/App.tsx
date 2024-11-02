@@ -1,5 +1,5 @@
-import ToDoList from "./components/ToDoList/ToDoList.tsx";
+import UpdateArrayObjects from "./components/UpdateArrayObjects/UpdateArrayObjects.tsx";
 
 export default function App() {
-  return <ToDoList />;
+  return <UpdateArrayObjects />;
 }
