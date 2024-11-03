@@ -1,5 +1,7 @@
-import DigitalClock from "./components/DigitalClock/DigitalClock";
+import DigitalClock3 from "./components/DigitalClock3/DigitalClock3.jsx";
 
-export default function App() {
-  return <DigitalClock />;
+function App() {
+  return <DigitalClock3 />;
 }
+
+export default App;
