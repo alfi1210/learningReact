@@ -1,0 +1,28 @@
+body {
+  background-image: url("src/assets/bg-image_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.DigitalClockCntainer {
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0px;
+}
+
+.DigitalClock {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: monospace, sans-serif;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.793);
+}

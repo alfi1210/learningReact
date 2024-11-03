@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./UpdateArrayObjects.module.css";
 
-export default function UpdateArrayOvjects() {
+export default function UpdateArrayObjects() {
   const [cars, setCars] = useState<any>([]);
   const [carYear, setCarYear] = useState(new Date().getFullYear());
   const [carMake, setCarMake] = useState("");
@@ -18,6 +18,12 @@ export default function UpdateArrayOvjects() {
       alert("Please enter make and model");
     }
   }
+  /*************  ✨ Codeium Command ⭐  *************/
+  /**
+   * Removes the car at given index from the list of cars.
+   * @param index The index of the car to remove from the list.
+   */
+  /******  bd57b168-3789-45a6-916a-fe4a6c3a2876  *******/
   function handleRemoveCar(index: number) {
     const updatedCars = cars.filter((_: any, i: number) => i !== index);
     setCars(updatedCars);
@@ -34,17 +40,29 @@ export default function UpdateArrayOvjects() {
 
   return (
     <div className={style.container}>
-      <h2>List of cars</h2>
+      <h2>
+        List of&nbsp;&nbsp;<i className="fas fa-car fa-xs"></i>
+      </h2>
       <ul>
         {cars.map((car: any, index: number) => (
           <li key={index}>
-            {car.year} {car.make} {car.model}
-            <button onClick={() => handleRemoveCar(index)}>
-              <i className="fas fa-car">&nbsp;&nbsp;</i>
-              <i className="fa fa-trash"></i>
+            <span className={style.carText}>
+              {car.year} - {car.make} - {car.model}
+            </span>
+            <button
+              className={style.buttonAdd}
+              onClick={() => handleRemoveCar(index)}
+            >
+              <i className="fa fa-trash fa-hs"></i>
             </button>
           </li>
         ))}
+        <hr />
+        <hr />
+
+        <h3>
+          Car form <i className="fas fa-keyboard fa-xs"></i>
+        </h3>
       </ul>
       <input type="number" value={carYear} onChange={handleYearChange} />
       <br />
@@ -53,7 +71,7 @@ export default function UpdateArrayOvjects() {
         value={carMake}
         onChange={handleMakeChange}
         placeholder="Enter car make"
-      />{" "}
+      />
       <br />
       <input
         type="text"
